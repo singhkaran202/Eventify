@@ -1,11 +1,12 @@
 #To get started with frontend project on your local environment, follow the steps:
 1. Fork the repo 
 2. run in terminal: git clone repo-url
-3. run: npm install
-4. To let this app connect to backend, need to create .env file in following format:
+3. change directory(cd ./client) to client
+4. run: npm install
+5. To let this app connect to backend, need to create .env file in following format:
 REACT_APP_BACKEND_URL=http://localhost:port
-5. run: npm start
-6. Hop to server side 
+6. run: npm start
+7. Hop to server side 
 
 
 
