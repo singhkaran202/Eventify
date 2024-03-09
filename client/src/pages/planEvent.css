@@ -1,0 +1,61 @@
+/* Container Styles */
+.plan-event-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading Styles */
+.plan-event-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styles */
+.plan-event-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.plan-event-form select,
+.plan-event-form input[type="text"],
+.plan-event-form input[type="date"],
+.plan-event-form input[type="time"],
+.plan-event-form input[type="email"],
+.plan-event-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.plan-event-form textarea {
+    resize: vertical;
+}
+
+.plan-event-form select {
+    cursor: pointer;
+}
+
+.plan-event-form .ticket-price-input {
+    display: none;
+}
+
+.plan-event-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.plan-event-form button:hover {
+    background-color: #0056b3;
+}

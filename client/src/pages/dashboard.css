@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu-item {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #555;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
