@@ -133,7 +133,7 @@ const PlanEvent = () => {
                     <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div> */}
                     <div>
-                        <label htmlFor="email">Mail to send for Interested Participants:</label>
+                        <label htmlFor="email">Mail to send for Interested Participants:<i>(Provide description with proper contact details of organisers)</i></label>
                         <input type="text" id="email" name='emailText' value={data.emailText} disabled={loading} onChange={handleOnChange} />
                     </div>
                     <div>
