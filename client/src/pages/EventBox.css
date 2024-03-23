@@ -1,14 +1,13 @@
-.data-container{
-    /* border: 2px solid green; */
+/* .data-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .event-box {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-    /* border: 2px solid red; */
     width:20%;
   }
   
@@ -56,6 +55,70 @@
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+   .data-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .event-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); /* 3 items per row with margin */
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: #f9f9f9; /* Light background color */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .event-box:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+  }
+  
+  .event-name {
+    margin-top: 0;
+    font-size: 1.2em; /* Larger font size for event name */
+  }
+  
+  .event-details p {
+    margin: 10px 0; /* Larger margin */
+  }
+  
+  .event-details p span {
+    font-weight: bold;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-top: 20px;
+  }
+  
+  .email-input input {
+    flex: 1; /* Take remaining space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
   }
   
   .submit-button:hover {

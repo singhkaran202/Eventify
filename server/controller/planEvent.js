@@ -1,6 +1,16 @@
 const eventModel = require("../model/event.model")
 // const bcryptjs = require('bcryptjs');
 
+
+function dateToMilliseconds(dateString) {
+    var dateObject = new Date(dateString);
+    var milliseconds = dateObject.getTime();
+
+    return milliseconds;
+}
+
+
+
 async function planEvent(req,res){
     try{
 
@@ -82,9 +92,30 @@ async function planEvent(req,res){
                 success : false
             })
         }
-        const payload = {
-            ...req.body
+        // const payload = {
+        //     ...req.body
+        // }
+
+        var dateString = req.body.date+"T"+req.body.time+":00"// ISO 8601 format
+        var ms = dateToMilliseconds(dateString);
+        var payload = {
+            dt:ms,
+            date: req.body.date,
+            description: req.body.description,
+            emailText: req.body.emailText,
+            eventName: req.body.eventName,
+            eventType: req.body.eventType,
+            ticketPrice: req.body.ticketPrice,
+            ticketType: req.body.ticketType,
+            time: req.body.time,
+            venue: req.body.venue
         }
+        console.log(payload)
+
+
+
+
+
 
         const eventDetails = new eventModel(payload)
         const save = await eventDetails.save()

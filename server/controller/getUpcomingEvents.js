@@ -1,9 +1,12 @@
 const eventModel = require("../model/event.model");
 
-async function getEvents(req, res) {
+async function getUpcomingEvents(req, res) {
     try {
+
+        const filter = {dt: {$gte: Date.now()}};
         // Retrieve all events from the database
-        const events = await eventModel.find();
+        const events = await eventModel.find(filter);
+       
 
         if (!events) {
             return res.status(404).json({
@@ -29,4 +32,4 @@ async function getEvents(req, res) {
     }
 }
 
-module.exports = getEvents;
+module.exports = getUpcomingEvents;

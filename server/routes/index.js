@@ -5,7 +5,9 @@ const userSignUp = require('../controller/userSignUp')
 const userSignin = require('../controller/userSiginIn')
 const userProfile = require('../controller/userProfile')
 const planEvent = require('../controller/planEvent')
-const getEvents = require('../controller/getEvents')
+const getUpcomingEvents = require('../controller/getUpcomingEvents')
+const getPastEvents = require('../controller/getPastEvents')
+const participantEmail = require('../controller/participantEmail')
 
 const verifyToken = require('../middlewares/verifyToken')
 
@@ -15,8 +17,10 @@ const verifyToken = require('../middlewares/verifyToken')
 router.post("/sign-up",userSignUp)
 router.post("/sign-in",userSignin)
 router.post("/plan-event", planEvent)
-router.get("/get-events", getEvents)
+router.get("/get-upcoming-events",verifyToken, getUpcomingEvents)
+router.get("/get-past-events",verifyToken, getPastEvents)
 router.post("/user-details",verifyToken,userProfile)
+router.post("/sendemail", participantEmail)
 
 
 
