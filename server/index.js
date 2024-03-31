@@ -6,6 +6,12 @@ const connectDB = require('./config/db')
 const router = require('./routes/index')
 // const sendEmail = require("./utils/sendEmail");
 
+
+
+const path = require("path");
+
+app.use(express.static(path.join(__dirname, "build")));
+
 const app = express()
 
 app.use(cors())
