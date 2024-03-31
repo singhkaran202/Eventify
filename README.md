@@ -31,6 +31,41 @@ Designed for a community to plan and manage events easily and efficiently
    #### Sign Up
    
    #### Plan Event
+
+
+## Contributing Guidelines
+### To get started with frontend project on your local environment, follow the steps:
+#### Fork the repository
+
+#### Run in terminal: 
+```bash
+git clone repo-url
+```
+
+#### change directory to client
+ ```bash
+(cd ./client)
+```
+
+#### Now run: 
+```bash
+npm install
+```
+
+#### To let this app connect to backend, need to create .env file in following format:
+```bash
+REACT_APP_BACKEND_URL=http://localhost:PORT
+```
+
+#### Run:
+
+```bash
+npm start
+```
+ 
+#### Now, hop to server side
+
+
    
 
 
