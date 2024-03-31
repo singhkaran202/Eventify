@@ -63,7 +63,34 @@ REACT_APP_BACKEND_URL=http://localhost:PORT
 npm start
 ```
  
-#### Now, hop to server side
+#### Now, hop to server side :)
+
+## Server Side
+### To get started with server side project on your local environment, follow the steps:
+
+#### Change directory to server
+```bash
+cd ./server
+```
+
+#### Install all npm dependencies needed
+```bash
+npm install
+```
+ 
+#### Create .env file in following format
+
+```bash
+MONGODB_URI = [add mongodb_database url]
+JWT_SECRET = [Add your secret text]
+```
+
+#### Start the server
+```bash
+npm run dev
+```
+    
+
 
 
    
