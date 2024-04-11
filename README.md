@@ -20,17 +20,29 @@ Designed for a community to plan and manage events easily and efficiently
 ## Screenshots
 
 ### Dashboard + Plan Event Page
-   
+![Screenshot from 2024-03-14 15-46-59](https://github.com/singhkaran202/EventNexus/assets/105576642/df46e93f-b2ca-439f-8cd7-8204d141caa0)
+
+
 ### Display Event 
+![Screenshot from 2024-03-14 16-59-30](https://github.com/singhkaran202/EventNexus/assets/105576642/89f8bab4-6fcd-4e27-a03c-2052f5905a5f)
+
 
 ### Profile
+![Screenshot from 2024-04-11 18-30-57](https://github.com/singhkaran202/EventNexus/assets/105576642/b144f0e4-238f-43b4-9775-8068bd84ff64)
+
+
 
 ### Architecture Explained
    #### Sign In
+   ![Signin (1)](https://github.com/singhkaran202/EventNexus/assets/105576642/4f887e11-6647-454f-af1c-7bc790232541)
+
    
    #### Sign Up
+   ![DSA jpeg (1)](https://github.com/singhkaran202/EventNexus/assets/105576642/824640a1-9a2a-4480-a096-4e317e8ae630)
+Up
    
    #### Plan Event
+![Plan event (1)](https://github.com/singhkaran202/EventNexus/assets/105576642/92725cbb-6cec-494a-86f6-40a9f9618b0a)
 
 
 ## Contributing Guidelines
