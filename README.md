@@ -1,4 +1,4 @@
-# EventNEXUS
+# Eventify
 
 Designed for a community to plan and manage events easily and efficiently
 
@@ -6,7 +6,7 @@ Designed for a community to plan and manage events easily and efficiently
 
 - Organizers can host all the necessary information about their event on the platform
 - Users interested in participating can simply provide their email address to join the event
-- Once a participant provides email, EventNEXUS app sends a pre-drafted email provided by the event organizer during registration
+- Once a participant provides email, Eventify app sends a pre-drafted email provided by the event organizer during registration
 - And this above process is **automated** through **Nodemailer** with **Oauth 2.0** security
 - This process simplifies event organization and participation, making it accessible to all
 
